@@ -107,4 +107,4 @@ http://localhost:3004/
 http://localhost:3004/info
 http://localhost:3004/saludo
 http://localhost:3004/api/status
-http://localhost:3004/noexiste
+http://localhost:3004/404
