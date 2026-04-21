@@ -1,4 +1,4 @@
-# Laboratorio 6 
+# Laboratorio 6
 # Parte 1
 ## Correcciones en servidor-malo.js
 
@@ -48,3 +48,63 @@ Se corrigió el cierre agregando el paréntesis faltante
 
 ## Resultado
 ![Resultado](Img/resultado.png)
+
+# Parte 2
+
+Ya con el servidor funcionando en la parte 1, se le realizaroncambios para agregar nuevas rutas
+
+También cambié el puerto a 3004 porque ya tenía ocupado el 3000 con la parte anterior
+
+## Cambio 1: Ruta `/info`
+
+Antes esta ruta solo devolvía texto, ahora devuelve un JSON con la información que se pidió
+
+- mensaje  
+- curso  
+- tecnologia  
+
+
+![info](Img/info.png)
+
+---
+## Cambio 2: Ruta `/saludo`
+
+Se creó una nueva ruta `/saludo` que devuelve texto. Le puse un mensaje inspirado en Toy Story porque estaba viendo la peli XD
+
+
+![saludo](Img/saludo.png)
+
+---
+
+## Cambio 3: Ruta `/api/status`
+
+Se creó una nueva ruta `/api/status` que devuelve un JSON con
+
+- ok  
+- status  
+- puerto  
+
+
+![status](Img/status.png)
+
+---
+
+## Cambio 4: Mejora del 404
+
+Ahora cuando una ruta no existe, el servidor muestra cuál fue la ruta que el usuario intentó visitar y que no existe 
+
+
+![404](Img/404.png)
+
+---
+
+## Rutas probadas
+
+Estas fueron las rutas que probé en el navegador
+
+```txt
+http://localhost:3004/
+http://localhost:3004/info
+http://localhost:3004/saludo
+http://localhost:3004/api/status
+http://localhost:3004/noexiste
